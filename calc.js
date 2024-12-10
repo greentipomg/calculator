@@ -5,10 +5,10 @@ const OPERATIONS = {
     division: '/'
 }
 
-function calculator({ a, b, OPERATIONS }) {
+function calculate({ a, b, operation }) {
     let result = null;
 
-    switch(OPERATIONS) {
+    switch(operation) {
         case OPERATIONS.sum:
             result = sum(a, b)
             break;
